@@ -1,0 +1,24 @@
+/* CSS Document */
+body{
+	margin:0;
+}
+#hspan{
+	color:cadetblue;
+}
+
+.box{
+	width:300px;
+	height: 200px;
+}
+#box1{
+	background-color: coral;
+	margin: 0 auto;
+}
+
+#box2{
+	background:red;
+	margin-top: 20px;
+	
+	
+}
+

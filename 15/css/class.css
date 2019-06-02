@@ -1,0 +1,13 @@
+/* CSS Document */
+table{
+	/*border: 4px solid orange;*/
+	width:50%;
+	margin: 0 auto;
+	border-spacing: 0;
+}
+
+td{
+border: 1px solid black;
+	
+}
+	

@@ -1,0 +1,278 @@
+/*初始化部分*/
+body,p,ul,li,input{
+   margin: 0;
+   padding: 0;
+list-style: none;
+}
+.pull-left{
+	float:left;
+}
+.pull-right{
+	float:right;
+}
+.clearfix{
+	*zoom:1;
+}
+.clearfix:hover{
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+
+
+/*头部*/
+.header{
+	min-width: 960px;
+	height:60px;
+	border-bottom:1px solid #dcdcdc;
+}
+.header-left{
+	width:300px;
+	height:60px;
+}
+
+.header-left>a,.header-left>span{
+	text-indent: -999px;
+	display: inline-block;
+	background: url(../imgaes/download-all.gif) no-repeat;
+}
+
+.header-left>a{
+	margin-left: 11px;
+    margin-top: 6px;
+	width: 170px;
+	height: 44px;
+	
+	background-position: -642px 4px;
+}
+
+.header-left>span{
+	width: 86px;
+	height: 38px;
+	background-position: -689px -45px;
+	margin-left: -15px;
+}
+
+
+.heder-right{
+	width:211px;
+	margin-top: 35px;
+}
+.heder-right>a,.heder-right>span{
+	color: #2974b6;
+	font-size: 12px;
+	margin-left:  -1px;
+	margin-right: -1px;
+	text-decoration: none;
+}
+
+/*下载菜单部分*/
+.download-menu{
+	height:94px;
+	background-color: #fafafa;
+}
+.menu-tab{
+	width:971px;
+	margin:0 auto;
+}
+.menu-tab>li{
+	margin-top: 5px;
+	width:161px;
+	height: 93px;
+	float: left;
+}
+.menu-tab a{
+	position: relative;
+}
+.menu-tab span{
+	width:161px;
+	height: 35px;
+	margin: 0 auto;
+	text-indent: -9999px;
+	display: block;
+	position: absolute;
+	top:29px;
+}
+.meun-tab-1 span{
+	background: url(../imgaes/download-all.gif);
+	background-position: -8px -186px;
+}
+.meun-tab-2 span{
+	background: url(../imgaes/download-all.gif);
+	background-position: -190px -130px;
+
+}.meun-tab-2 span:hover{
+	background: url(../imgaes/download-all.gif);
+	background-position: -190px -186px;
+
+}
+.meun-tab-3 span{
+	background: url(../imgaes/download-all.gif);
+	background-position:-380px -130px;
+
+}.meun-tab-3 span:hover{
+	background: url(../imgaes/download-all.gif);
+	background-position:-380px -186px;
+
+}
+.meun-tab-4 span{
+	margin-left: -50px;
+	background: url(../imgaes/download-all.gif);
+	background-position:-500px -130px;
+
+}.meun-tab-4 span:hover{
+	background: url(../imgaes/download-all.gif);
+	background-position:-500px -186px;
+
+}
+.meun-tab-5 span{
+	margin-left: -70px;
+	background: url(../imgaes/download-all.gif);
+	background-position:-620px -130px;
+
+}.meun-tab-5 span:hover{
+	background: url(../imgaes/download-all.gif);
+	background-position:-620px -186px;
+
+}
+.meun-tab-6 span{
+	margin-left: -100px;
+	background: url(../imgaes/download-all.gif);
+	background-position:-755px -130px;
+
+}.meun-tab-6 span:hover{
+	background: url(../imgaes/download-all.gif);
+	background-position:-755px -186px;
+
+}
+
+/*下载信息部分*/
+.download-info{
+	width:100%;
+	height: 439px;
+	background:url(../imgaes/bg.png) repeat-x;
+}
+.download-info-content{
+	width: 980px;
+	height: 437px;
+	margin: 0 auto;
+	background:url(../imgaes/guanjia_bg.jpg) no-repeat;
+	position: relative;
+}
+.download-text{
+	color: #fffffa;
+	width: 380px;
+	height: 131px;
+	position: absolute;
+	top:200px;
+	left: 622px;
+	font-size: 12px;
+}
+.download-text>p{
+	margin-bottom:10px;
+}
+.download-text span{
+	margin-left: 10px;
+}
+.download-text >a{
+	width: 169px;
+	height: 58px;
+	float: left;
+	text-decoration: none;
+	color: white;
+	text-indent: -9999px;
+	display: block;
+	background: url(../imgaes/download-all.gif) no-repeat;
+	background-position:-415px -291px;
+}
+
+
+/*下载方式部分*/
+.download-method{
+	width: 100%;
+	height:197px;
+	border-bottom: 1px solid #f0f0f0;
+}
+.download-method-content{
+	width:960px;
+	height: 197px;
+	margin: 0 auto;
+	
+}
+.download-method-content-left,.download-method-content-right{
+	margin-top: 50px;
+}
+.download-method-content-left{
+	float:left;
+}
+
+#phonenumber{
+	width:190px;
+	height: 32px;
+}
+#yzmimp{
+	width:112px;
+	height: 32px;
+}
+.download-method-content-left img{
+	
+	display: inline-block;
+	height: 28px;
+	width: 100px;
+	margin-top: 10px;
+	margin-left:6px;
+}
+.download-method-content-left b{ 
+	display: inline-block;
+	width: 90px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	background: url(../imgaes/btn.gif) right -56px no-repeat;
+	color: white;
+	
+}
+.download-method-content-right{
+	margin-left:55px;
+}
+.download-method-content-right,.download-method-content-right >div{
+	float:left;
+}
+.code-left{
+	width:160px;
+	height:82px;
+}
+
+.code-right{
+	    margin-left: 32px;
+}
+
+.code-title{
+	font-size: 20px;
+    font-family: "microsoft yahei";
+    color: #333;
+}
+.code-txt{
+	font-size: 12px;
+    font-family: "microsoft yahei";
+    line-height: 18px;
+    color: #333;
+	margin-top: 20px;
+}
+/*底部*/
+.footer>div{
+	text-align:center;
+	margin-top: 40px;
+	font: 12px/1.5 tahoma,arial,宋体;
+	color: #666666;
+}
+	
+.b-lnk-gy{
+	text-decoration: none;
+	color: #666666;
+}
+
+	

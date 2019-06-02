@@ -1,0 +1,51 @@
+/* CSS Document */
+body{
+	margin:0;
+	padding: 0;
+}
+.conten{
+	width: 500px;
+	height: 500px;
+	border: 1px solid red;
+	margin: 0 auto;
+	position: relative;
+	
+	
+}
+
+
+.relative{
+	width:10%;
+	height:10%;
+	background-color: rebeccapurple;
+	
+
+}
+#r1{
+	border-radius: 0 0 100% 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#r2{
+	border-radius:0 0 0 100%;
+	position:absolute;
+	top: 0;
+	right: 0;
+}
+#r3{
+	border-radius:0 100% 0 0;
+	position:  absolute;
+	bottom: 0;
+	left: 0;
+	
+}
+#r4{
+	border-radius:100% 0 0 0;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+
+

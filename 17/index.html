@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<link rel="stylesheet" href="imghover.css">
+</head>
+
+	<!--
+
+-->
+<body>
+	<h1>测试表单</h1>
+	
+	<button>我是button</button>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<form action="https://www.baidu.com/s" method="get" target="_blank">
+		<input type="text" name="wd" >
+		<input type="submit" value="提交">
+		<input type="reset" value="重置">
+	</form>
+	
+	
+	
+	文本框:<input type="text" name="" id=""><br>
+	<!--普通input文本框添加readonly后为只读文本框,但是form表单提交时该标签的value值还是会提交-->
+	只读文本框:<input type="text" readonly value="123456"><br>
+	
+	
+	密码框: <input type="password" name="" id="">
+	
+	<!--input元素 添加disabled后会被禁用,form表单提交时不会该元素的值不会被提交-->
+	被禁用的:<input type="password" disabled><br>
+	
+	复选框: <input type="checkbox"> <input type="checkbox" name="" id=""><br>
+	
+	单选框: <br>
+	
+	<!--label标签: 扩大鼠标点击的范围,只要点击label标签内文本,就会触发此控件,前提是控件与label标签建立联系之后.-->
+	<!--显示添加label标签, 建立联系的方式是:在label标签内的for属性里添加控件的id-->
+	<label for="man"> 男:</label><input type="radio" id="man" name="sex" value="男">
+	<!--隐式添加label标签,建立联系的方式是:整个控件及内容被label标签所包裹,并且label标签没有for属性.-->
+	<label >女:<input type="radio" name="sex" id="女"></label>
+	<br>
+	
+	下拉菜单: <select name="aihao" id="">
+		<option value="">篮球</option>
+		<option value="">足球</option>
+		<option value="">乒乓球</option>
+		<option value="">羽毛球</option>
+		<option value="">游泳</option>
+	</select><br>
+	长文本框:<textarea name="" id="" cols="2" rows="3"></textarea><br>
+	文件上传框:<input type="file" name="" id=""><br>
+	隐藏域:<input type="hidden" name="yc" value="123"><br>
+
+	
+</body>
+</html>

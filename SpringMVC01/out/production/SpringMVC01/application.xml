@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--普通注入-->
+    <bean id="stu" class="cn.mcandroid.pojo.Stu">
+        <property name="name" value="傻强"></property>
+        <property name="age" value="18"></property>
+        <property name="sex" value="男"></property>
+    </bean>
+
+
+    <!--使用默认构造器注入-->
+    <!--
+      使用标签constructor-arg  给构造器的参数赋值
+      index 为构造器参数的位置 从0开始
+      value 用来给构造器参数赋值 ，如果参数是个对象，则用ref
+     -->
+    <bean id="stu2" class="cn.mcandroid.pojo.Stu">
+        <constructor-arg index="0" value="脏兮兮"></constructor-arg>
+        <constructor-arg index="1" value="20"></constructor-arg>
+        <constructor-arg index="2" value="女"></constructor-arg>
+    </bean>
+
+
+
+    <!-- 该变spring 中的默认单例模式-->
+    <!-- 将scope 属性改变为prototype 每次获取的bean就不会是单例（每次调用都将创建一个实例） -->
+    <bean id="stu3" class="cn.mcandroid.pojo.Stu" scope="prototype">
+        <constructor-arg index="0" value="二愣子"></constructor-arg>
+        <constructor-arg index="1" value="20"></constructor-arg>
+        <constructor-arg index="2" value="男"></constructor-arg>
+    </bean>
+
+
+    <!--配置 带有集合的注入  -->
+    <bean id="classes" class="cn.mcandroid.pojo.Classes">
+        <!--注入 string 属性-->
+        <property name="name" value="六（1）班"></property>
+        <!-- 配置list的属性 -->
+        <property name="list"  >
+            <!--list 标签配置list 中的每一个元素-->
+            <list>
+                <!--ref 标签 就是引用类的对象 如果是一些基础的数据类型使用value 标签即可-->
+                <ref bean="stu"></ref>
+                <ref bean="stu2"></ref>
+                <ref bean="stu3"></ref>
+            </list>
+        </property>
+
+        <!--配置 数组属性-->
+        <property name="ints" >
+            <!--这里依然使用list标签-->
+            <list>
+                <!-- 给数组的每一个元素赋值 基本数据类型使用value  引用对象类型 则使用ref-->
+                <value>12</value>
+                <value>3</value>
+                <value>4</value>
+                <value>5</value>
+                <value>6</value>
+                <value>10</value>
+            </list>
+        </property>
+
+
+
+        <!--配置 set  属性-->
+        <property name="set">
+            <!--这里依然使用list标签-->
+            <list>
+                <!--ref 标签 就是引用类的对象 如果是一些基础的数据类型使用value 标签即可-->
+                <ref bean="stu"></ref>
+                <ref bean="stu2"></ref>
+                <ref bean="stu3"></ref>
+            </list>
+        </property>
+        <!--配置map 属性-->
+        <property name="map">
+            <!--这里跟其他集合不太一样，这里使用的是map标签-->
+            <map>
+                <!-- 使用entry标签给集合里的每一个键值对赋值 -->
+                <!-- key 属性为map中的key值 value 属性为 value-ref 为map中value值 value-ref 是引用数据类型  如果是一些基础的数据类型使用value 属性即可 -->
+                <entry  key="s1" value-ref="stu"></entry>
+                <entry  key="s2" value-ref="stu2"></entry>
+                <entry  key="s3" value-ref="stu3"></entry>
+
+            </map>
+        </property>
+    </bean>
+
+
+    <!--注入依赖的类-->
+    <!--如果参数是个对象，则用ref-->
+    <bean id="stus" class="cn.mcandroid.pojo.Stus">
+        <property name="classes" value="三（2）班"></property>
+        <property name="stu" ref="stu"></property>
+    </bean>
+
+
+
+
+
+    <!-- 给构造器中传入依赖的对象 -->
+    <bean id="stus2" class="cn.mcandroid.pojo.Stus">
+        <constructor-arg index="0" value="五（1）班"></constructor-arg>
+        <constructor-arg index="1" ref="stu2"></constructor-arg>
+    </bean>
+
+
+    <!-- 使用工厂创建 单例bean  -->
+    <!--   factory-method 属性 的值 为对象中获取单例的方法-->
+    <bean id="school" class="cn.mcandroid.pojo.School" factory-method="getInstance"></bean>
+
+
+
+
+
+
+</beans>

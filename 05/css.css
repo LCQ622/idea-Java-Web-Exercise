@@ -1,0 +1,64 @@
+/* CSS Document */
+#a{
+	color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#box{
+	width:20%;
+	}
+p{
+	/*设置段落首行缩进*/
+	text-indent: 25px;
+	
+	/*更改字体颜色*/
+	color:darkolivegreen;
+	
+	/*设置字体大小*/
+	font-size: 25px;
+	
+	/*设置字体粗细
+	bold：加粗
+	或者是输入数字。
+	
+	*/
+	font-weight: 100;
+	
+	/*
+	设置字体
+	*/
+	font-family: "楷体";
+	/* 设置字体风格
+	italic:斜体
+	*/
+	font-style:italic;
+	/*设置行高*/
+	line-height: 40px;
+	
+
+}

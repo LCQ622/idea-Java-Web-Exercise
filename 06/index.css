@@ -1,0 +1,21 @@
+/* CSS Document */
+p{
+	height: 80px;
+	border: 1px solid #074D83;
+	/*让文字水平居中*/
+ 	/*text-align: center;*/
+	
+	/*
+	设置行高
+	让文本垂直居中
+	该属性等于父容器的高度值时文本将居中.
+	
+	*/
+	line-height:80px;
+	
+	/*设置首行缩进*/
+	text-indent: 30px;
+	/*设置字间距*/
+	letter-spacing: 30px;
+}
+

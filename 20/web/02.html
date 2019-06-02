@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload=function (ev) {
+            var btn=document.getElementById("btn");
+            var p1=document.getElementById("p1");
+            btn.onclick=function (ev1) {
+                var xhr=new XMLHttpRequest();
+                var url=encodeURI("/test?name=abc");
+                xhr.open("POST",url,true);
+                xhr.send();
+                alert("已发送");
+                var str=xhr.responseText;
+               alert(typeof  xhr.responseText);
+            }
+        }
+    </script>
+</head>
+<body>
+<button id="btn">按钮</button>
+<p id="p1"></p>
+</body>
+</html>

@@ -1,0 +1,51 @@
+/* CSS Document */
+body{
+	margin: 0
+}
+#lift{
+	
+	float: left;
+}
+
+	.con{
+		/*width: 300px;
+*/
+		/*position: relative;*/
+	}
+	.lbox{
+		width:200px;
+		height: 200px;
+		float: left;
+	}
+		#lbox1{
+			background: #028C9D;
+			border-radius: 0  0 100% 0 ;	
+		}
+		#lbox2{
+			background: #664D04;
+			border-radius: 0 100% 0  0 ;
+			position: absolute;
+			bottom: 0;
+		}
+/*右边部分*/
+
+#right{
+	float: right;
+}
+.rbox{
+	
+}
+.rbox{
+		width:200px;
+		height: 200px;
+}
+#rbox1{
+	background: #540FB0;
+	border-radius: 0 0   0 100%;
+}
+#rbox2{
+	background: #E75D1C;
+	position: absolute;
+	bottom: 0;
+	border-radius:100% 0 0 0 ;
+}

@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+#box{
+	color:slategrey;
+}
+#div{
+	color: indianred;
+}
+.red{
+	color: red;
+	font-size: 25px;
+}
+.blue{
+	color: cornflowerblue;
+	font-size: 20px;
+}
+.yellow{
+	color: orange;
+}

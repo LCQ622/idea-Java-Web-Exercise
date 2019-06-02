@@ -1,0 +1,46 @@
+/* CSS Document */
+.com{
+	width:425px;
+	margin:0px auto;
+/*	border: 1px solid red;*/
+
+}
+.warp{
+	width: 210px;
+	margin:0px auto;
+
+	float: left;
+}
+#r{
+	margin-left: 5px;
+}
+.warp-con{
+	width:210px;
+}
+.item{
+	font-size: 0;
+	margin-top: 20px;
+}
+#item1{
+	margin:0;
+}
+#item2{
+	margin:0;
+}
+
+p{
+	text-indent: 25px;
+	width: 210px;
+	height: 46px;
+	margin: 0;
+	font-size: 15px;
+	color: #222222;
+	background: #f8f8f8;
+	line-height: 46px;
+}
+.p1:hover{
+	color: #00be06;
+}
+
+
+

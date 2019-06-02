@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试ajax</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        var xhr = new XMLHttpRequest();
+        var url;
+        window.onload = function () {
+            var btn = document.getElementById("btn");
+            btn.onclick = function () {
+                Ajax("/test?name=陆昌强");
+            }
+        };
+
+        function Ajax(url){
+            var xhr;
+            if(window.XMLHttpRequest){
+                xhr=new XMLHttpRequest();
+            }else {
+                xhr=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+
+            xhr.open("get",url,true);
+            xhr.send();
+            xhr.readystatechange=function () {
+                if(xhr.readyState==4){
+                    if (xhr.status==200) {
+                        alert("成功")
+                    }else{
+                        alert("失败");
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<button id="btn">按钮</button>
+</body>
+</html>

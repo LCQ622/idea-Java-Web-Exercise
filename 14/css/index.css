@@ -1,0 +1,57 @@
+body{
+    margin:0;
+    padding: 0;
+}
+
+.warp{
+    width: 520px;
+    height: 280px;
+    margin: 0 auto;
+    position: relative;
+}
+#contnet{  
+    width: 80px;
+    height:12px;
+    background-color:rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -40px;
+}
+.boxa{
+    float: left;
+    width: 8px;
+    height: 8px;
+    margin-left:8%;
+    margin-top: 2px;
+    background-color: white;
+    border-radius: 50%;
+}
+#first{
+    background-color: orange;
+}
+
+.sp{
+    width:30px;
+    height: 20px;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;  
+	text-align: center;
+	line-height: 20px;
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+}
+#left{
+    float: left;
+	border-radius: 0 20px 20px 0;
+	left: 0;
+	
+}
+#right{
+    float: right;
+	border-radius: 20px 0  0 20px ;
+	right: 0;
+}
